@@ -70,5 +70,10 @@ public abstract class Vehiculo {
     public void setTasaEmisiones(float tasaEmisiones) {
         this.tasaEmisiones = tasaEmisiones;
     }
+
+	public double calcularPrecioNeeto() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	
 }
