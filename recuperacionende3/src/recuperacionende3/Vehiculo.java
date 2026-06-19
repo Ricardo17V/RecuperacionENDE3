@@ -30,6 +30,12 @@ public abstract class Vehiculo {
     
     public double calcularPrecioBruto(double importe, int numDias) {
     	double precioBruto;
+    	if(importe<0) {
+    		throw new IllegalArgumentException("El importe de la fianza no puede ser negativo");
+    	}
+    	if(numDias<=0 || numDias>=12) {
+    		throw new IllegalArgumentException("El número de días debe estar entre 1 y 12 incluidos");
+    	}
     	precioBruto = precioBase + (importe/numDias);
 		return precioBruto;
     	
