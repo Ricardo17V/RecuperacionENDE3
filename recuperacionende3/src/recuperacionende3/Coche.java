@@ -43,7 +43,7 @@ public class Coche extends Vehiculo{
 		return tasaEmisiones;
 	}
 	/**
-	 * Método que nos permite cambiar la tasa de emisiones del coche
+	 * método que nos permite cambiar la tasa de emisiones del coche
 	 */
 	public void setTasaEmisiones(float tasaEmisiones) {
 		this.tasaEmisiones = tasaEmisiones;
